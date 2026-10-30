@@ -11,16 +11,16 @@ I build backend systems and full-stack products end to end — from requirements
 
 ### Projects
 
-**Conversation Memory Assistant — Personal AI Agent**
+**[WhatsApp Memory Search](https://github.com/jdanielgh/whatsapp-memory-search) — Open-source RAG assistant**
 
-A personal AI assistant that lets me search and ask questions about my WhatsApp conversation history using natural language.
+Archives a WhatsApp conversation as immutable evidence, indexes it, and answers natural-language questions — every answer cites the messages that support it, and it says so when the evidence isn't enough.
 
-- Designed and implemented a RAG-based backend to process and retrieve information from 8,200+ messages using contextual chunking, metadata filtering, pgvector semantic search, Voyage AI embeddings, and the Anthropic API.
-- Built a 100-question regression framework to validate LLM grounding against retrieved evidence while tracking intent, latency, and AI costs. The full regression run costs $1.38.
+- RAG backend on Node.js/TypeScript, PostgreSQL + pgvector and Drizzle: literal, date, timeline, topic, statistics and semantic search, with AI-extracted entities, events and topics.
+- Verifiable answers: the model returns claims tied to evidence indexes, and a deterministic check flags any claim citing evidence that doesn't exist. The archived messages are read-only at the database-role level.
+- Swappable AI behind a provider abstraction — the Anthropic API or Claude Code through a subscription (no API spend), Voyage AI for embeddings — with idempotent, cost-reporting runs and a 100-question regression suite that tracks grounding, intent, latency and cost.
+- Generic by design: categories, analysis dimensions and prompt context come from a configurable domain profile. CI runs typecheck, unit and integration tests against an ephemeral Postgres.
 
-*Repo private — contains personal message data.*
-
-**WaveMark — Founder & Sole Developer**
+**[Music Wave Mark](https://musicwavemark.jdgh.dev) — Founder & Sole Developer**
 
 A web application for creating smart bookmarks on audio content. Users can upload an audio file, visualize and navigate its waveform, play specific sections, and save exact moments with timestamps, comments, and bookmark types for quick reference.
 
