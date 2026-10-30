@@ -30,7 +30,7 @@ Designed for creators, editors, and teams reviewing or collaborating on audio co
 
 *Repo private — pre-launch.*
 
-**[create-claude-base](https://github.com/jdanielgh/create-claude-base)** — a reusable Claude Code base (rules, agents, hooks, MCP presets) for new projects, with presets for web, mobile, backend and RAG.
+**[Create Claude Base](https://github.com/jdanielgh/create-claude-base)** — a reusable Claude Code base (rules, agents, hooks, MCP presets) for new projects, with presets for web, mobile, backend and RAG.
 
 ### Stack
 
