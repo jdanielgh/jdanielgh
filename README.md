@@ -20,6 +20,20 @@ Archives a WhatsApp conversation as immutable evidence, indexes it, and answers 
 - Swappable AI behind a provider abstraction — the Anthropic API or Claude Code through a subscription (no API spend), Voyage AI for embeddings — with idempotent, cost-reporting runs and a 100-question regression suite that tracks grounding, intent, latency and cost.
 - Generic by design: categories, analysis dimensions and prompt context come from a configurable domain profile. CI runs typecheck, unit and integration tests against an ephemeral Postgres.
 
+**[AI Job](https://github.com/MadsLorentzen/ai-job-search) — Claude Code job-search assistant (extended open-source framework)**
+
+A job-search workflow built on Claude Code: it scrapes portals, ranks postings against my profile, and drafts tailored CVs and cover letters with a reviewer agent. I forked the open-source *ai-job-search* framework and extended it for my own search.
+
+- Added portals: LinkedIn (with an Easy Apply filter), Himalayas, Jobicy and Freelancermap, storing location, employment type, contract note and employer country per posting.
+- Built a local ranking dashboard to review and tick ranked postings, with a History tab over my application tracker, plus a sync to a hosted dashboard that drafts applications for accepted postings.
+
+**CodeLens AI — AI Pull Request reviewer** *(in development, private repo)*
+
+Combines deterministic static analysis, repository-aware RAG and specialized LangGraph agents to produce evidence-backed review findings, with human approval before anything is published to GitHub.
+
+- Foundation in progress: TypeScript monorepo (pnpm + Turborepo), Zod domain contracts for findings and evidence, PostgreSQL + pgvector and Redis in Docker Compose, Drizzle migrations with mandatory reverse scripts, and CI running lint, typecheck, tests and a Postgres integration job.
+- Next: LangGraph JS workflow, GitHub App ingestion, Semgrep/ts-morph analysis and repository RAG.
+
 **[Music Wave Mark](https://musicwavemark.jdgh.dev) — Founder & Sole Developer**
 
 A web application for creating smart bookmarks on audio content. Users can upload an audio file, visualize and navigate its waveform, play specific sections, and save exact moments with timestamps, comments, and bookmark types for quick reference.
@@ -35,7 +49,7 @@ Designed for creators, editors, and teams reviewing or collaborating on audio co
 ### Stack
 
 `Node.js` `TypeScript` `Express` `NestJS` `React` `PostgreSQL` `MongoDB` `Redis` `Docker` `Kafka` `Azure` `GCP` `AWS`
-`RAG` `pgvector` `LLM applications` `Claude Code / agentic development`
+`RAG` `pgvector` `LangGraph` `LLM applications` `Claude Code / agentic development`
 
 ### Currently
 
