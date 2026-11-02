@@ -24,7 +24,7 @@ Archives a WhatsApp conversation as immutable evidence, indexes it, and answers 
 
 A job-search workflow built on Claude Code: it scrapes portals, ranks postings against my profile, and drafts tailored CVs and cover letters with a reviewer agent. I forked the open-source *ai-job-search* framework and extended it for my own search.
 
-- Added portals: LinkedIn (with an Easy Apply filter), Himalayas, Jobicy and Freelancermap, storing location, employment type, contract note and employer country per posting.
+- Added portals: LinkedIn, Himalayas, Jobicy and Freelancermap, storing location, employment type, contract note and employer country per posting.
 - Built a local ranking dashboard to review and tick ranked postings, with a History tab over my application tracker, plus a sync to a hosted dashboard that drafts applications for accepted postings.
 
 **CodeLens AI — AI Pull Request reviewer** *(in development, private repo)*
